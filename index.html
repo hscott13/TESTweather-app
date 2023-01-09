@@ -10,127 +10,143 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <script src="https://kit.fontawesome.com/07abe82056.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Silkscreen&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/07abe82056.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
 
   <body>
-    
-      <div class="container">
-        <header>
+    <div class="container">
+      <header>
         <div class="row align-items-center">
           <div class="col">
             <h1>What's the weather like in...</h1>
           </div>
           <div class="col">
-            
             <form class="search" id="city-search">
-              <input class="input" type="text" autofocus="on" id="city-input"/>
+              <input class="input" type="text" autofocus="on" id="city-input" />
               <button class="button-form" type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </form>
-          <button id="current-location-button">Current Location</button>
-        </div>
+            <button id="current-location-button">Current Location</button>
+          </div>
           <span class="cities">
-          <div class="row">
-            <div class="col">
-              <button>London</button>
+            <div class="row">
+              <div class="col">
+                <button>London</button>
+              </div>
+              <div class="col">
+                <button>Paris</button>
+              </div>
+              <div class="col">
+                <button>Tokyo</button>
+              </div>
+              <div class="col">
+                <button>New York</button>
+              </div>
+              <div class="col">
+                <button>Sydney</button>
+              </div>
             </div>
-            <div class="col">
-              <button>Paris</button>
-            </div>
-            <div class="col">
-              <button>Tokyo</button>
-            </div>
-            <div class="col">
-              <button>New York</button>
-            </div>
-            <div class="col">
-              <button>Sydney</button>
-            </div>
-          </div>
           </span>
-        </header>
-        <hr>
-          <main>
-            
-          <div class="row align-items-center">
-            <div class="col">
-              
-              <div class="card text-center border-0" style="width: 18rem;">
-                <div class="card-body">
-                  <div class="text">
-                    
+        </div>
+      </header>
+      <hr />
+      <main>
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card text-center border-0" style="width: 18rem">
+              <div class="card-body">
+                <div class="text">
                   <h2 class="card-title" id="main-city">Glasgow</h2>
-                  <p id="current-date" class="card-text" >
-                     16/12/2022
-                  </p>
+                  <p id="current-date" class="card-text">16/12/2022</p>
                 </div>
-                </div>
-                <span class="weather">
-                   <i class="fa-solid fa-cloud-showers-heavy"></i> <span id="current-temp">4</span>
-                   °
-                </span>
-      <span ><button class="temp-buttons" id="celcius">°C</button><button class="temp-buttons" id="fahrenheit">°F</button></span>
+              </div>
+              <span class="weather">
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+                <span id="current-temp">4</span>
+                °
+              </span>
+              <span
+                ><button class="temp-buttons" id="celcius">°C</button
+                ><button class="temp-buttons" id="fahrenheit">°F</button></span
+              >
             </div>
           </div>
-            <div class="col">
-              <div class="card text-center border-0" style="width: 18rem;">
-                <div class="card-body">
+          <div class="col">
+            <div class="card text-center border-0" style="width: 18rem">
+              <div class="card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item" id="weather-description">Mostly Cloudy</li>
-                  <li class="list-group-item"> Clouds: <span id="clouds">90</span>%</li>
-                  <li class="list-group-item">Wind: <span id="wind-speed">13</span>m/s</li>
+                  <li class="list-group-item" id="weather-description">
+                    Mostly Cloudy
+                  </li>
+                  <li class="list-group-item">
+                    Clouds: <span id="clouds">90</span>%
+                  </li>
+                  <li class="list-group-item">
+                    Wind: <span id="wind-speed">13</span>m/s
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
-        </main>
-        <hr>
-        <article class="forecast">
-          <div class="row">
-            <div class="col text-center">
-              
-                <h3 > 5 DAY FORECAST </h3>
-            
-          </div>
-          <div class="col">
-              <div class="card text-center">
-            <h5 class="card-title">SAT</h5>
-            <span> <i class="fa-solid fa-cloud-showers-heavy"></i>  4°</span>
-              </div>
         </div>
-          <div class="col">
-              <div class="card text-center">
-                <h5 class="card-title">SUN</h5>
-                <span> <i class="fa-solid fa-cloud-showers-heavy"></i>  7°</span>
-              </div>
+      </main>
+      <hr />
+      <article class="forecast">
+        <div class="row">
+          <div class="col text-center">
+            <h3>5 DAY FORECAST</h3>
           </div>
           <div class="col">
-              <div class="card text-center">
-                <h5 class="card-title">MON</h5>
-                <span> <i class="fa-solid fa-cloud-showers-heavy"></i>  13°</span>
-              </div>
+            <div class="card text-center">
+              <h5 class="card-title">SAT</h5>
+              <span> <i class="fa-solid fa-cloud-showers-heavy"></i> 4°</span>
+            </div>
           </div>
           <div class="col">
-              <div class="card text-center">
-                <h5 class="card-title">TUE</h5>
-                <span> <i class="fa-solid fa-cloud-showers-heavy"></i>  9°</span>
-              </div>
+            <div class="card text-center">
+              <h5 class="card-title">SUN</h5>
+              <span> <i class="fa-solid fa-cloud-showers-heavy"></i> 7°</span>
+            </div>
           </div>
           <div class="col">
-              <div class="card text-center">
-                <h5 class="card-title">WED</h5>
-                <span> <i class="fa-solid fa-cloud-showers-heavy"></i>  7°</span>
+            <div class="card text-center">
+              <h5 class="card-title">MON</h5>
+              <span> <i class="fa-solid fa-cloud-showers-heavy"></i> 13°</span>
+            </div>
           </div>
-        </div>
+          <div class="col">
+            <div class="card text-center">
+              <h5 class="card-title">TUE</h5>
+              <span> <i class="fa-solid fa-cloud-showers-heavy"></i> 9°</span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <h5 class="card-title">WED</h5>
+              <span> <i class="fa-solid fa-cloud-showers-heavy"></i> 7°</span>
+            </div>
+          </div>
         </div>
       </article>
-      
+      <div>
+        <a target="_blank" href="https://github.com/hscott13/weather-app"
+          >Open-source code</a
+        >
+        by Heather Scott
       </div>
-    
+    </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
